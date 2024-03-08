@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="file:///C:/Users/QHTF/Downloads/voxile(1).png" type="image/x-icon">
+    <style>
+    html {
+        font-family: "League Spartan", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('file:///C:/Users/QHTF/Downloads/Untitled%20design(15).png'); /* Add your background image path here */
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        overflow: auto;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        background-color: #5e17eb;
+        padding: 10px;
+        align-items: center;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+    .logo img {
+        width: 140px; /* Adjust the size of your logo */
+        height: auto;
+        margin-right: 10px; /* Add some spacing between the logo and navigation */
+    }
+    nav {
+        display: flex;
+        justify-content: center; /* Align navigation items horizontally at the center */
+    
+    }
+
+    .aligned-navbar {
+        text-align: center; /* Align text within the navigation links to the center */
+        align-items: center;
+        margin-right: right; 
+    }
+
+    .aligned-navbar a {
+        color: #ffffff; /* Navigation link text color */
+        text-decoration: none; /* Remove underline from links */
+        padding: 1px 20px; /* Padding around the link text */
+        display: inline-block; /* Display links inline */
+        font-size: 30px; /* Font size for navigation links */
+        text-align: center; /* Align text within the navigation links to the center */   
+    }
+
+    .aligned-navbar a:hover {
+        background-color: #f0f0f000; /* Change background color on hover */
+    }
+
+    nav a:hover {
+        color: #ffbb3c; /* Change color on hover */
+    }
+    .profile-section {
+        display: flex;
+        align-items: center;
+    }
+    .profile-info {
+        margin-right: 10px;
+        color: #fff;
+        margin-left: 50px;
+    }
+    .profile-image {
+        width: 40px;
+        height: 40px;
+        margin-right: 50px;
+        border-radius: 50%;
+        background-color: #ccc; /* Placeholder color */
+    }
+    section {
+        padding: 20px;
+    }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+        rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Voxile</title>
+</head>
+<body>
+    <div class="navbar-container">
+        <div class="logo">
+            <img src="file:///C:/Users/QHTF/Downloads/voxile(1)logo.png" alt="Your Logo">
+        </div>
+        <nav class="aligned-navbar">
+            <a href="file:///C:/Users/QHTF/Downloads/TEMPLATE.html#">Home</a>
+            <a href="file:///C:/Users/QHTF/Downloads/HOME.html">About</a>
+            <a href="#">Help</a>
+            
+        <div class="profile-section">
+            <div class="profile-info">
+                <p1>Macoy123!</p1> <!-- Update with your user's name -->
+            </div>
+            <div class="profile-image"></div> <!-- Update with your user's image -->
+        </div>
+    </div>
+    <audio id="sound"></audio>
+    <div class="container">
+        <div class="search-box">
+            <input
+                type="text"
+                placeholder="Type the word here.."
+                id="inp-word"
+            />
+            <button id="search-btn">Search</button>
+        </div>
+        <div class="result" id="result"></div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
